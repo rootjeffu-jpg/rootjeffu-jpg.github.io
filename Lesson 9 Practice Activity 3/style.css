@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    background-color: #fffdf4;
+    color: #263e32;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.site-header,
+.site-footer {
+    background-color: #244c38;
+    color: white;
+}
+
+.site-header a,
+.site-footer a {
+    color: white;
+    text-underline-offset: 0.2em;
+}
+
+.site-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero {
+    background: linear-gradient(to bottom, #cdeeff, #edf8dc);
+    border-bottom: 5px solid #a7cc79;
+}
+
+.hero h1,
+.section-title {
+    color: #244c38;
+}
+
+.hero-button {
+    padding: 0.7rem 1.4rem;
+    border-radius: 2rem;
+    background-color: #593984;
+    color: white;
+    font-weight: 700;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #40265f;
+    color: white;
+}
+
+.group-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 1.5rem;
+}
+
+.section-title,
+.card-title {
+    font-weight: 700;
+}
+
+.tubby-card {
+    overflow: hidden;
+    border: 1px solid #d8dfd1;
+    border-radius: 1rem;
+}
+
+.character-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top;
+    border-bottom: 6px solid var(--tubby-color);
+}
+
+.tinky-winky {
+    --tubby-color: #7952a5;
+}
+
+.dipsy {
+    --tubby-color: #79ad37;
+}
+
+.laa-laa {
+    --tubby-color: #efc43d;
+}
+
+.po {
+    --tubby-color: #d64144;
+}

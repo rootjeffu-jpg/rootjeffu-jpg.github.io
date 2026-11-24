@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Lab 2 - Interactive Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 id="greeting">Hello User!</h1>
+    <p id="message">Welcome to my page. Use the options below to customize it.</p>
+
+    <hr>
+
+    <div class="sectionRow">
+
+        <div class="section">
+            <h2>Customize this page</h2>
+
+            <div class="controls">
+                <div class="field">
+                    <label for="nameInput">Your name:</label>
+                    <input type="text" id="nameInput" placeholder="Enter your name">
+                </div>
+
+                <div class="field">
+                    <label for="messageInput">Brief message:</label>
+                    <input type="text" id="messageInput" placeholder="Enter a message">
+                </div>
+
+                <div class="field">
+                    <label for="colorSelect">Background color:</label>
+                    <select id="colorSelect" onchange="previewColor()">
+                        <option value="white"       style="background-color: white;">White</option>
+                        <option value="lightblue"   style="background-color: lightblue;">Blue</option>
+                        <option value="lightgreen"  style="background-color: lightgreen;">Green</option>
+                        <option value="lightyellow" style="background-color: lightyellow;">Yellow</option>
+                        <option value="lavender"    style="background-color: lavender;">Lavender</option>
+                        <option value="lightpink"   style="background-color: lightpink;">Pink</option>
+                    </select>
+                </div>
+
+                <button onclick="applyChanges()">Submit</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>To Do List</h2>
+
+            <div class="controls">
+                <div class="field">
+                    <label for="todoInput">New to-do item:</label>
+                    <input type="text" id="todoInput" placeholder="Enter a task">
+                </div>
+
+                <button onclick="addTodoItem()">Add To Do</button>
+
+                <ol id="todoList"></ol>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
