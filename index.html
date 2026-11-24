@@ -8,8 +8,9 @@
     body {
       margin: 0;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       text-align: center;
@@ -19,38 +20,57 @@
       width: 300px;
       max-width: 80vw;
     }
-  </style>
-</head>
-<body>
-    <h1>Coming Soon!!!!!!!!!!</h1>
-  <img src="wait im goated.jpg" alt="Coming soon">
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coming Soon</title>
-  <style>
-    body {
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 1rem;
+      background: #fff;
+      border-top: 1px solid #ddd;
+    }
+
+    nav ul {
       margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      text-align: center;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1.25rem;
     }
 
-    img {
-      width: 300px;
-      max-width: 80vw;
+    nav a {
+      color: #333;
     }
   </style>
 </head>
 <body>
+  <main>
     <h1>Coming Soon!!!!!!!!!!</h1>
-  <img src="wait im goated.jpg" alt="Coming soon">
+    <img src="wait im goated.jpg" alt="Coming soon">
+  </main>
+  <nav aria-label="Lesson pages">
+    <ul>
+      <li><a href="Lesson%202%20Practice%20Activity%201/index.html">Lesson 2 Practice Activity 1</a></li>
+      <li><a href="Lesson%203%20Individual%20Assignment%201/index.html">Lesson 3 Individual Assignment 1</a></li>
+      <li><a href="Lesson%204%20Partner%20Lab%201/index.html">Lesson 4 Partner Lab 1</a></li>
+      <li><a href="Lesson%205%20Partner%20Lab%202/index.html">Lesson 5 Partner Lab 2</a></li>
+      <li><a href="Lesson%206%20Individual%20Assignment%202/index.html">Lesson 6 Individual Assignment 2</a></li>
+      <li><a href="Lesson%207%20Individual%20Assignment%203/index.html">Lesson 7 Individual Assignment 3</a></li>
+      <li><a href="Lesson%208%20Lab%201/index.html">Lesson 8 Lab 1</a></li>
+      <li><a href="Lesson%208%20Practice%20Activity%202/index.html">Lesson 8 Practice Activity 2</a></li>
+      <li><a href="Lesson%209%20Lab%201/index.html">Lesson 9 Lab 1</a></li>
+      <li><a href="Lesson%209%20Practice%20Activity%203/index.html">Lesson 9 Practice Activity 3</a></li>
+      <li><a href="Lesson%2010%20Lab%201/index.html">Lesson 10 Lab 1</a></li>
+    </ul>
+  </nav>
 </body>
 </html>
